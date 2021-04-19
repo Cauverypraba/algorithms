@@ -10,13 +10,9 @@ class SelectionSort():
             for z in range(i, len(array)):
                 if i < len(array)-1 and z < len(array)-1 and min > array[z+1]:
                     min = array[z+1]
-                    # print('if',min)
                 else:    
                     min = min
-                    # print('else',min)
-                    self.c = array.index(min)
-        # print(array[j], array[c])
-            # print(self.j, self.c, min)    
+                    self.c = array.index(min)    
             array[self.j], array[self.c] = array[self.c], array[self.j]
             if i < len(array)-1:
                min = array[i+1]
@@ -25,7 +21,6 @@ class SelectionSort():
         if array == sorted(array):
             print(array)
         else:
-            # min = array[i+1]
             self.sort(array)            
 
 array = [20, 50, 2, 15, 22]
