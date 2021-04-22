@@ -26,3 +26,4 @@ class SelectionSort():
 array = [20, 50, 2, 15, 22]
 ss = SelectionSort()
 ss.sort(array)
+
