@@ -11,9 +11,10 @@ def bubbleSort(array):
     array2 = array[:]
     print(array,array2)
     array2.sort(reverse = True)
+    print(array2)
     # check both array is in descending order else return to bubbleSort()
     if array == array2:
-        print(array)
+        print('Sorted array in descending order: ',array)
     else:
         bubbleSort(array)        
     
